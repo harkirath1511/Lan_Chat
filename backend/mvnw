@@ -1,0 +1,16 @@
+#!/bin/sh
+# ----------------------------------------------------------------------------
+# Maven Wrapper Executable Shell Script
+# ----------------------------------------------------------------------------
+set -e
+
+DIRNAME="$(cd "$(dirname "$0")" && pwd)"
+MAVEN_PROJECTBASEDIR="$DIRNAME"
+
+# Fallback to system mvn if wrapper jar not present
+if command -v mvn >/dev/null 2>&1; then
+  exec mvn "$@"
+fi
+
+echo "Error: Maven not found on PATH and wrapper jar not pre-cached."
+exit 1
