@@ -1,0 +1,6 @@
+{
+  "name": "COMMON — LAN Chat Studio",
+  "description": "A contemporary communication studio for local network conversations, featuring procedural 3D network choreography and a responsive chat workspace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
