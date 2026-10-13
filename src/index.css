@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-ivory: #F4F1EB;
+  --color-stone: #E5E0D7;
+  --color-ink: #202522;
+  --color-forest: #294E43;
+  --color-forest-dark: #1F3C34;
+  --color-orange: #D36C43;
+  --color-muted: #777D76;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #F4F1EB;
+    color: #202522;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbar for chat and story */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(32, 37, 34, 0.16);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(32, 37, 34, 0.28);
+}
+
